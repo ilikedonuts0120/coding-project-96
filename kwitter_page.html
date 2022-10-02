@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Chat Web App Page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Shadows+Into+Light+Two&family=Staatliches&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<button id="logout" class="btn btn-danger" style="font-family: 'Staatliches', cursive;">Logout</button>
+	<center>
+		<h1 class="header">	
+			Let's Chat Web App	
+			<sup>
+				<img src="text.png" style="width:50px; margin-left:1px; margin-top:20px;">
+			</sup>
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div" id="box4" style="position: fixed;bottom: 20px; width:80%; margin:143px">
+		<h4 style="font-family: 'Shadows Into Light Two', cursive;">Send Message:</h4>
+		<input style="font-family: 'Shadows Into Light Two', cursive; box-shadow: 0px 5px 5px rgba(19, 19, 19, 0.109); width:500px" type="text" id="msg" class="form-control" placeholder="Message">
+		<br>
+		<button style="font-family: 'Staatliches', cursive; font-size: large; letter-spacing: 1px; width: 250px" id="send_button" onclick="send()" class="btn btn-success">Send</button>
+		<br>
+		<br>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
+</body>
+</html>
